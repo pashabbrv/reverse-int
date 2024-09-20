@@ -1,6 +1,5 @@
 module.exports = function reverse(n) {
     let res = 0;
-    let isNegative = n < 0;
     n = Math.abs(n);
 
     while (n > 0) {
@@ -8,5 +7,5 @@ module.exports = function reverse(n) {
         n = Math.floor(n / 10);
     }
 
-    return isNegative ? -res : res;
+    return res;
 }
